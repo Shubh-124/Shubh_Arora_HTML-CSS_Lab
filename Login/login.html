@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login Page</title>
+    <style>
+        * {
+            font-family: 'Times New Roman', Times, serif;
+        }
+
+        #myvideo {
+            position: fixed;
+            width: auto;
+            height: auto;
+        }
+
+        .login-form {
+            /* background-color: yellow; */
+            border: 2px solid white;
+            position: absolute;
+            top: 25%;
+            left: 35%;
+            width: 300px;
+            padding: 20px;
+            /* margin: 20px; */
+            line-height: 20px;
+        }
+
+        input {
+            width: 90%;
+            font-size: 1.2rem;
+            height: 30px;
+            margin: 3px 0px;
+            /* border-radius: 10px; */
+        }
+
+        input:hover {
+            background-color: steelblue;
+            opacity: 0.35;
+        }
+
+        button {
+            display: inline;
+            font-size: 1.3rem;
+            padding: 5px;
+            width: 30%;
+            border-radius: 5px;
+            align-items: center;
+            color: white;
+            margin: 0px 20px;
+            background-color: rgb(226, 53, 226);
+        }
+
+        button:focus {
+            background-color: rgb(125, 96, 152);
+        }
+
+        #num::-webkit-outer-spin-button,
+        #num::-webkit-inner-spin-button {
+            -webkit-appearance: none;
+        }
+    </style>
+</head>
+
+<body>
+    <!-- adding background video -->
+    <video id="myvideo" autoplay muted loop>
+        <source src="./videos/Background.mp4" type="video/mp4" />
+        Browser Doesn't Support
+    </video>
+    <!-- using HTML5 commands -->
+    <div class="login-form">
+        <h2>Create Gmail Account</h2>
+        <form action="homepage.html">
+            <input type="text" title="name" placeholder="Full Name" required />
+            <input id="num" type="number" title="contact_no" min="6000000000" max="90000000000"
+                placeholder="Contact Number" required minlength="8" />
+            <input type="email" placeholder="Enter email id" />
+            <br>
+            <!-- <a href="signup.html">No Account?:Signup</a> -->
+            <br>
+            <div class="buttons">
+                <button type="submit">Submit</button>
+                <button type="reset">Reset</button>
+            </div>
+
+        </form>
+    </div>
+</body>
+
+</html>
